@@ -10,20 +10,17 @@ namespace Aula_Presencial_8_80
           
             int dia, mes, ano;
 
-
             dia = EntrarNumero("Entre com o dia:  ");
 
             mes = EntrarNumero("Entre com o mes: ");
 
             ano = EntrarNumero("Entre com o ano: ");
 
-
             if (ano < 1900) {
 
                 Console.WriteLine("Ano inválido");
                 return;
             }
-
 
             switch (mes) {
 
@@ -32,10 +29,8 @@ namespace Aula_Presencial_8_80
                     if((dia < 1) || (dia > 31)){
 
                         Console.WriteLine("Dia inválido");
-
                     }
                     break;
-
 
                 case 1: case 3: case 5: case 7:  case 8: case 10: case 12:
 
@@ -62,9 +57,8 @@ namespace Aula_Presencial_8_80
 
                         }
                     }
-
+                    
                     break;
-
            
                 default:
                 Console.WriteLine("Mês invalido");
@@ -87,11 +81,5 @@ namespace Aula_Presencial_8_80
             } while (true);
                 return num;
         }
-
-
-
-
-
-
     }
 }
